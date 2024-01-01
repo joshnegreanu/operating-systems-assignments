@@ -8,7 +8,9 @@
 int main(int argc, char *argv[]) {
 
     // get file name
-    char* file_name = argv[1];
+    char* file_name = argv[0];
+
+    printf("%s", file_name);
     
     // parse file into movie list
     struct movie* movie_list = parse_file(file_name);

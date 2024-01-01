@@ -62,7 +62,7 @@ struct movie* parse_file(char *file_name) {
     getline(&current_line, &len, movie_file);
 
     // scrub through each line, creating a movie with all the info in it
-    while ((nread = getline(&current_line, &len, movie_file)) != -1) {
+    while ((nread = getline(&current_line, &len, movie_file)d) != -1) {
         struct movie* new_movie_node = create_movie(current_line);
 
         // build up the doubly linked list
